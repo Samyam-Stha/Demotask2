@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Demo Task</title>
     <link rel="stylesheet" href="styles.css" />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -63,7 +63,12 @@
 
     <nav class="navbar">
       <a href="/" class="logo">
-        <img src="logo.png" alt="360 Logo" />
+        <img
+          src="/Images/Primary Logo.png"
+          width="72px"
+          height="72px"
+          alt="360 Logo"
+        />
       </a>
 
       <ul class="nav-links">
@@ -108,6 +113,283 @@
       </div>
       <div class="hero-image">
         <img src="/Images/Frame 262.png" alt="" />
+      </div>
+    </section>
+
+    <section class="events">
+      <div class="events-header">
+        <p>Upcoming <span>Events</span></p>
+        <a href="#" class="view-all-btn">View All Events</a>
+      </div>
+      <p class="events-subtitle">
+        Turn your international education dreams into reality.
+      </p>
+
+      <div class="event-cards">
+        <article class="event-card">
+          <img src="/Images/image (1).png" alt="USA Education Fair Poster" />
+          <div class="event-details">
+            <p class="location">Biratnagar</p>
+            <div class="event-info">
+              <h3>USA Education Fair - May &amp; August Intake</h3>
+              <button class="date-btn">28<sup>th</sup> Jan 2025</button>
+            </div>
+            <a href="#" class="register-btn">Register Now</a>
+          </div>
+        </article>
+
+        <article class="event-card">
+          <img src="/Images/image (2).png" alt="USA Education Fair Poster" />
+          <div class="event-details">
+            <p class="location">Biratnagar</p>
+            <div class="event-info">
+              <h3>USA Education Fair - May &amp; August Intake</h3>
+              <button class="date-btn">28<sup>th</sup> Jan 2025</button>
+            </div>
+            <a href="#" class="register-btn">Register Now</a>
+          </div>
+        </article>
+
+        <article class="event-card">
+          <img src="/Images/image (3).png" alt="Study Abroad Fair Poster" />
+          <div class="event-details">
+            <p class="location">Biratnagar</p>
+            <div class="event-info">
+              <h3>USA Education Fair - May &amp; August Intake</h3>
+              <button class="date-btn">28<sup>th</sup> Jan 2025</button>
+            </div>
+            <a href="#" class="register-btn">Register Now</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="contact-container">
+        <div class="contact-image">
+          <img src="/Images/Group 69.png" alt="Students" class="img1" />
+          <img src="Images/Group 28.png" alt="" class="img2" />
+        </div>
+
+        <div class="contact-form">
+          <h2><span>Fill out the form</span> below</h2>
+          <p class="subtitle">
+            Our experts will connect with you to help you choose the right
+            university, program, and scholarships.
+          </p>
+
+          <form>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input
+                  type="text"
+                  id="full-name"
+                  name="full_name"
+                  placeholder="Enter your full name"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="phone-number">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone-number"
+                  name="phone_number"
+                  placeholder="Enter your phone number"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email address"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="degree">Desired Degree</label>
+                <select id="degree" name="degree" required>
+                  <option value="">Select the degree</option>
+                  <option value="bachelor">Bachelor's</option>
+                  <option value="master">Master's</option>
+                  <option value="phd">PhD</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="faculty">Desired Faculty</label>
+                <input
+                  type="text"
+                  id="faculty"
+                  name="faculty"
+                  placeholder="Enter your name of the faculty"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="destination">Desired Destination</label>
+                <select id="destination" name="destination">
+                  <option value="">Select the destination</option>
+                  <option value="usa">USA</option>
+                  <option value="uk">UK</option>
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group" style="flex: 1">
+                <label for="test-prep">Test Preparation</label>
+                <select id="test-prep" name="test_preparation">
+                  <option value="">Select the Test Preparation</option>
+                  <option value="ielts">IELTS</option>
+                  <option value="toefl">TOEFL</option>
+                  <option value="sat">SAT</option>
+                  <option value="gre">GRE</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Enter your queries/message"
+              ></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="destinations">
+      <div class="destinations-header">
+        <h2>Explore our <span>Top Study Destinations</span></h2>
+        <p>Turn your international education dreams into reality.</p>
+      </div>
+
+      <div class="destinations-container">
+       
+        <div class="destination-cards">
+          <div class="destination-card ">
+            <img src="/Images/australia.png" alt="Australia" />
+            <p class="country">
+             
+              <span class="fi fi-au"></span> Australia 
+            </p>
+          </div>
+
+          <div class="destination-card">
+            <img src="/Images/usa.png" alt="USA" />
+            <p class="country">
+              <span class="fi fi-us"></span> USA
+            </p>
+          </div>
+
+          <div class="destination-card">
+            <img src="/Images/canada.png" alt="Canada" />
+            <p class="country">
+              <span class="fi fi-ca"></span> Canada
+            </p>
+          </div>
+
+          <div class="destination-card">
+            <img src="/Images/germany.png" alt="Germany" />
+            <p class="country">
+              <span class="fi fi-de"></span> Germany
+            </p>
+          </div>
+          
+          <div class="destination-card">
+            <img src="/Images/germany.png" alt="Germany" />
+            <p class="country">
+              <span class="fi fi-de"></span> Germany
+            </p>
+          </div>
+        </div>
+
+        
+      </div>
+    </section>
+
+    <section class="trust-section">
+      <div class="trust-content">
+        <h2>
+          A Legacy of Trust, Excellence, and
+          <span class="highlight">Student Success</span>
+        </h2>
+        <p>
+          At 360 Education, we are committed to guiding students toward a
+          successful international education journey. With expert counseling,
+          comprehensive support, and a strong network of global institutions, we
+          help students make informed decisions and achieve their academic
+          dreams with confidence.
+        </p>
+
+        <div class="stats">
+          <div class="stats-container">
+            <div class="stat-item">
+              <div class="stat-icon">📋</div>
+              <p class="stat-number">98.2%</p>
+              <p class="stat-label">Visa Success Rate</p>
+            </div>
+            <div class="stat-item">
+              <div class="stat-icon">🎓</div>
+              <p class="stat-number">500+</p>
+              <p class="stat-label">Partnered Universities</p>
+            </div>
+            <div class="stat-item">
+              <div class="stat-icon">📍</div>
+              <p class="stat-number">8</p>
+              <p class="stat-label">Study Destinations</p>
+            </div>
+            <div class="stat-item">
+              <div class="stat-icon">📚</div>
+              <p class="stat-number">15K+</p>
+              <p class="stat-label">Successful Students</p>
+            </div>
+            <div class="stat-item">
+              <div class="stat-icon">🛡️</div>
+              <p class="stat-number">23</p>
+              <p class="stat-label">Years of Experience</p>
+            </div>
+            <div class="stat-item">
+              <div class="stat-icon">💰</div>
+              <p class="stat-number">$5M+</p>
+              <p class="stat-label">Scholarships Secured</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="learn-btn">Learn More about 360 Education</a>
+      </div>
+
+      <div class="trust-image">
+        <div class="image-placeholder">
+          <div class="curved-border">
+            <div class="image-frame">
+              <div class="student-image-placeholder">
+                <span>Students studying together</span>
+              </div>
+            </div>
+          </div>
+          <div class="travel-icon">✈️</div>
+        </div>
       </div>
     </section>
   </body>
