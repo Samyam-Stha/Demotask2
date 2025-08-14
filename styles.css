@@ -385,7 +385,7 @@ form button:hover {
 }
 
 .destinations {
-  padding: 48px 116px;
+  padding: 48px 0px 48px 116px;
   background-color: #fff;
   text-align: center;
   position: relative;
@@ -413,44 +413,6 @@ form button:hover {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding-left: 120px;
-  padding-right: 120px;
-}
-
-.decorative-path {
-  position: absolute;
-  left: 50px;
-  top: 0;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  z-index: 1;
-  pointer-events: none;
-}
-
-.airplane-icon {
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: #666;
-}
-
-.dashed-line {
-  width: 2px;
-  height: 200px;
-  background: repeating-linear-gradient(
-    to bottom,
-    #ccc 0,
-    #ccc 8px,
-    transparent 8px,
-    transparent 16px
-  );
-}
-
-.location-pin {
-  font-size: 20px;
-  margin-top: 10px;
-  color: #666;
 }
 
 .destination-cards {
@@ -458,7 +420,8 @@ form button:hover {
   grid-template-columns: repeat(5, 1fr);
   gap: 24px;
   width: 100%;
-  padding: 20px 30px;
+  padding: 20px 5px;
+  overflow: hidden;
 }
 
 .destination-card {
@@ -480,8 +443,7 @@ form button:hover {
 
 .destination-card .country {
   display: flex;
-  align-items: center;
-  justify-content: center;
+
   gap: 8px;
   padding: 16px;
   font-weight: 500;
@@ -501,23 +463,11 @@ form button:hover {
   transform: scale(1.02);
 }
 
-.destination-card.highlight:hover {
-  transform: scale(1.05) translateY(-5px);
-}
-
-.decorative-shape {
-  position: absolute;
-  right: 50px;
-  top: -20px;
-  z-index: 1;
-}
-
-.mountain-shape {
-  width: 60px;
-  height: 60px;
-  background: linear-gradient(135deg, #ffed4e, #ffd700);
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  transform: rotate(45deg);
+.destination-card p span {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
 }
 
 .trust-section {
@@ -539,38 +489,38 @@ form button:hover {
 }
 
 .trust-content .highlight {
-  color: #0073e6;
+  color: #324fa6;
   font-weight: bold;
 }
 
 .trust-content p {
-  font-size: 16px;
   width: 650px;
-
   margin-top: 10px;
-  margin-bottom: 20px;
+
   line-height: 1.6;
 }
 
-.stats {
-  border: 2px solid red;
-  display: grid;
-}
-
 .stats-container {
-  border: 2px solid blue;
   display: grid;
-  grid-template-columns: 148px 148px 148px;
-  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: repeat(3, 148px);
+  grid-template-rows: repeat(2, 100px);
   gap: 20px;
   column-gap: 44px;
 }
-
-.stat-item {
-  border: 2px solid green;
+.stat-number {
+  color: #324fa6;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
 }
+
+.stat-label {
+  font-size: 14px;
+  color: black;
+}
+
 .learn-btn {
-  background: #0073e6;
+  background: #324fa6;
   color: white;
   padding: 10px 20px;
   font-size: 14px;
