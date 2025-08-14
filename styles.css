@@ -674,6 +674,258 @@ form button:hover {
 .dashed-line {
   display: block;
   width: 80%;
-  margin: 0 auto 100px auto;
+  margin: 0 auto 0 auto;
   border-bottom: 2px dashed rgba(128, 128, 128, 0.349);
+}
+
+.success-stories {
+  padding: 70px 0;
+  background-color: #fff;
+}
+
+.stories-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.stories-header p {
+  font-size: 28px;
+
+  line-height: 1.4;
+}
+
+.stories-header .highlight {
+  color: #324fa6;
+  font-weight: bold;
+}
+
+.stories-header .subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-top: 8px;
+}
+
+.stories-container {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.google-rating {
+  flex: 0 0 200px;
+  background: #fff;
+  text-align: center;
+}
+
+.google-rating .rating-label {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.google-rating .stars {
+  color: #fbbc05;
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.google-rating .review-count {
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.google-rating .review-count a {
+  color: black;
+  text-decoration: underline;
+}
+
+.review-cards {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.review-card {
+  background: #f8faff;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.review-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review-name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.review-date {
+  font-size: 12px;
+  color: #777;
+}
+
+.review-card .stars {
+  color: #fbbc05;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.review-text {
+  font-size: 13px;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.read-more {
+  font-size: 13px;
+  font-weight: bold;
+  color: #324fa6;
+  text-decoration: underline;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(9, 76, 165, 0.4),
+      rgb(1, 36, 83)
+    ),
+    url("Images/world.png");
+  background-color: #005bb5;
+  color: white;
+  padding: 40px 20px 10px 20px;
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding: 0px 116px;
+}
+
+.footer-column h4 {
+  font-size: 14px;
+
+  text-transform: uppercase;
+}
+.blue-underline {
+  background-color: cyan;
+  height: 2px;
+  display: block;
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  color: #f2b705;
+}
+
+.footer-locations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 116px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+}
+.location {
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  font-size: 14px;
+}
+
+.location h5 {
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #ffd700;
+}
+.location p {
+  margin-bottom: 4px;
+  color: white;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 20px;
+}
+
+.footer-bottom .logos img {
+  height: 25px;
+  margin: 0 8px;
+}
+
+.location-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-items: center;
+}
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-items: center;
+}
+.bottom-detail {
+  padding: 0px 320px;
+  margin-bottom: 20px;
+}
+
+.credit-container {
+  display: flex;
+
+  justify-content: space-between;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  margin: 0px 100px;
+  padding: 10px 10px 0px 10px;
+}
+.owner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  color: white;
+  font-size: 12px;
 }
