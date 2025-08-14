@@ -543,3 +543,137 @@ form button:hover {
   width: 350px;
   border-radius: 20px;
 }
+
+/* Solutions Section */
+.solutions-section {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.solutions-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.solutions-header h2 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.solutions-header .highlight {
+  color: #324fa6;
+}
+
+.solutions-header .subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-top: 8px;
+}
+
+.solutions-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.solutions-image {
+  flex: 1;
+  max-width: 420px;
+}
+
+.solutions-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.career-counseling {
+  flex: 1;
+  margin-left: 50px;
+}
+
+.career-counseling div p {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.career-counseling p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.career-counseling ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.career-counseling ul li {
+  position: relative;
+  padding-left: 24px;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.career-counseling ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #324fa6;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: #253b80;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.partners {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 116px;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners p {
+  font-size: 24px;
+}
+
+.partners p span {
+  color: #324fa6;
+  font-weight: bold;
+}
+
+.partner-icons {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 66px;
+  width: 100%;
+  padding-left: 50px;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.dashed-line {
+  display: block;
+  width: 80%;
+  margin: 0 auto 100px auto;
+  border-bottom: 2px dashed rgba(128, 128, 128, 0.349);
+}
