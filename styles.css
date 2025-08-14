@@ -500,6 +500,9 @@ form button:hover {
   line-height: 1.6;
 }
 
+.stats {
+  margin-top: 40px;
+}
 .stats-container {
   display: grid;
   grid-template-columns: repeat(3, 148px);
@@ -512,6 +515,8 @@ form button:hover {
   font-weight: bold;
   font-size: 20px;
   display: flex;
+  column-gap: 6px;
+  align-items: center;
 }
 
 .stat-label {
@@ -527,6 +532,7 @@ form button:hover {
   border-radius: 4px;
   text-decoration: none;
   display: inline-block;
+  margin-top: 20px;
 }
 
 .learn-btn:hover {
