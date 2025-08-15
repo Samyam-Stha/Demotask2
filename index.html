@@ -96,7 +96,7 @@
         <button class="search-btn" aria-label="Search">
           <img src="Images/fi_3031293.png" alt="" />
         </button>
-        <a href="#" class="contact-btn">Contact Us</a>
+        <button href="#" class="contact-btn">Contact Us</button>
       </div>
     </nav>
 
@@ -108,7 +108,7 @@
           <strong style="color: #324fa6">Study Abroad Plans</strong>
         </p>
 
-        <p style="margin-top: 15px; line-height: 20px; width: 596px">
+        <p style="margin-top: 15px; line-height: 20px">
           Discover top universities, explore scholarship options, and get
           professional assistance to turn your international education dreams
           into reality.
@@ -167,6 +167,7 @@
           </div>
         </article>
       </div>
+      <button class="mobile-view-all-btn">View All Events</button>
     </section>
 
     <section class="contact-section">
@@ -354,7 +355,7 @@
                   height="32px"
                   alt=""
                 />
-                500+
+                <p>500+</p>
               </div>
               <p class="stat-label">Partnered Universities</p>
             </div>
@@ -365,18 +366,15 @@
                   width="32px"
                   height="32px"
                   alt=""
-                />8
+                />
+                <p>8</p>
               </div>
               <p class="stat-label">Study Destinations</p>
             </div>
             <div class="stat-item">
               <div class="stat-number">
-                <img
-                  src="Images/Group.png"
-                  width="32px"
-                  height="32px"
-                  alt=""
-                />15K+
+                <img src="Images/Group.png" width="32px" height="32px" alt="" />
+                <p>15k+</p>
               </div>
               <p class="stat-label">Successful Students</p>
             </div>
@@ -387,7 +385,8 @@
                   width="32px"
                   height="32px"
                   alt=""
-                />23
+                />
+                <p>23</p>
               </div>
               <p class="stat-label">Years of Experience</p>
             </div>
@@ -398,7 +397,8 @@
                   width="32px"
                   height="32px"
                   alt=""
-                />$5M+
+                />
+                <p>$5M+</p>
               </div>
               <p class="stat-label">Scholarships Secured</p>
             </div>
@@ -778,5 +778,35 @@
         </div>
       </div>
     </footer>
+
+    <!-- Mobile Menu JavaScript -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        mobileMenuToggle.addEventListener("click", function () {
+          mobileMenuToggle.classList.toggle("active");
+          navLinks.classList.toggle("active");
+        });
+
+        // Close mobile menu when clicking on a link
+        const navLinksItems = document.querySelectorAll(".nav-links a");
+        navLinksItems.forEach((link) => {
+          link.addEventListener("click", function () {
+            mobileMenuToggle.classList.remove("active");
+            navLinks.classList.remove("active");
+          });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener("click", function (event) {
+          if (!event.target.closest(".navbar")) {
+            mobileMenuToggle.classList.remove("active");
+            navLinks.classList.remove("active");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
