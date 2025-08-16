@@ -122,13 +122,15 @@
     </section>
 
     <section class="events">
-      <div class="events-header">
-        <p>Upcoming <span>Events</span></p>
-        <a href="#" class="view-all-btn">View All Events</a>
+      <div class="event">
+        <div class="events-header">
+          <p>Upcoming <span>Events</span></p>
+          <a href="#" class="view-all-btn">View All Events</a>
+        </div>
+        <p class="events-subtitle">
+          Turn your international education dreams into reality.
+        </p>
       </div>
-      <p class="events-subtitle">
-        Turn your international education dreams into reality.
-      </p>
 
       <div class="event-cards">
         <article class="event-card">
@@ -483,11 +485,13 @@
 
       <div class="stories-container">
         <aside class="google-rating">
-          <p class="rating-label">Excellent</p>
-          <div class="stars">★★★★★</div>
-          <p class="review-count">
-            Based on <a href="#" target="_blank">256 reviews</a>
-          </p>
+          <div class="rating-container">
+            <p class="rating-label">Excellent</p>
+            <div class="stars">★★★★★</div>
+            <p class="review-count">
+              Based on <a href="#" target="_blank">256 reviews</a>
+            </p>
+          </div>
           <img
             src="/Images/image 58.png"
             width="120px"
@@ -779,7 +783,6 @@
       </div>
     </footer>
 
-    <!-- Mobile Menu JavaScript -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
