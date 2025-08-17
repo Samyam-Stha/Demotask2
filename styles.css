@@ -1085,7 +1085,7 @@ form button:hover {
     margin-top: 0.5rem;
   }
   .logo {
-    left: 0;
+    margin-left: 0;
   }
 
   nav .nav-links li {
