@@ -1148,14 +1148,17 @@ form button:hover {
     scrollbar-width: none;
   }
   .stats {
-    margin: 0 2rem;
+    margin: 0 1rem; 
+    width: 100%;
   }
 
   .stats-container {
     margin-top: 2rem;
-    grid-template-columns: repeat(2, 9.25rem);
-    grid-template-rows: repeat(3, 6.25rem);
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+    justify-content: center;
   }
 
   .learn-btn {
