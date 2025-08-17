@@ -1031,7 +1031,7 @@ form button:hover {
     width: 100%;
     margin: 0 auto;
   }
-   .hero-image img {
+  .hero-image img {
     width: 100%;
     height: auto;
     margin: 0 auto;
@@ -1065,7 +1065,11 @@ form button:hover {
   }
   .contact-image .img1,
   .contact-image .img2 {
-    transform: scale(0.8);
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    transform: scale(0.85);
   }
 
   .contact-image .img2 {
