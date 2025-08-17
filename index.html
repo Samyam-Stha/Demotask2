@@ -288,8 +288,12 @@
     <section class="destinations">
       <div class="destinations-header">
         <h2>Explore our <span>Top Study Destinations</span></h2>
-        <p>Turn your international education dreams into reality.</p>
+        <div class="dest-nav-buttons">
+          <button class="dest-arrow left">&#10094;</button>
+          <button class="dest-arrow right">&#10095;</button>
+        </div>
       </div>
+      <p>Turn your international education dreams into reality.</p>
 
       <div class="destinations-container">
         <div class="destination-cards">
@@ -297,22 +301,18 @@
             <img src="/Images/australia.png" alt="Australia" />
             <p class="country"><span class="fi fi-au"></span> Australia</p>
           </div>
-
           <div class="destination-card">
             <img src="/Images/usa.png" alt="USA" />
             <p class="country"><span class="fi fi-us"></span> USA</p>
           </div>
-
           <div class="destination-card">
             <img src="/Images/canada.png" alt="Canada" />
             <p class="country"><span class="fi fi-ca"></span> Canada</p>
           </div>
-
           <div class="destination-card">
             <img src="/Images/germany.png" alt="Germany" />
             <p class="country"><span class="fi fi-de"></span> Germany</p>
           </div>
-
           <div class="destination-card">
             <img src="/Images/germany.png" alt="Germany" />
             <p class="country"><span class="fi fi-de"></span> Germany</p>
@@ -785,29 +785,18 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
-        const navLinks = document.querySelector(".nav-links");
+        const container = document.querySelector(".destination-cards");
+        const leftBtn = document.querySelector(".dest-arrow.left");
+        const rightBtn = document.querySelector(".dest-arrow.right");
 
-        mobileMenuToggle.addEventListener("click", function () {
-          mobileMenuToggle.classList.toggle("active");
-          navLinks.classList.toggle("active");
+        const scrollAmount = 300; // pixels per click
+
+        leftBtn.addEventListener("click", () => {
+          container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
         });
 
-        // Close mobile menu when clicking on a link
-        const navLinksItems = document.querySelectorAll(".nav-links a");
-        navLinksItems.forEach((link) => {
-          link.addEventListener("click", function () {
-            mobileMenuToggle.classList.remove("active");
-            navLinks.classList.remove("active");
-          });
-        });
-
-        // Close mobile menu when clicking outside
-        document.addEventListener("click", function (event) {
-          if (!event.target.closest(".navbar")) {
-            mobileMenuToggle.classList.remove("active");
-            navLinks.classList.remove("active");
-          }
+        rightBtn.addEventListener("click", () => {
+          container.scrollBy({ left: scrollAmount, behavior: "smooth" });
         });
       });
     </script>

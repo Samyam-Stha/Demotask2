@@ -410,6 +410,29 @@ form button:hover {
   text-align: center;
   position: relative;
 }
+.destinations-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.dest-nav-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+.dest-arrow {
+  background: #324fa6;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+.dest-arrow:hover {
+  background: #253b80;
+}
 
 .destinations-header h2 {
   font-size: 1.75rem;
@@ -436,12 +459,13 @@ form button:hover {
 }
 
 .destination-cards {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
   gap: 1.5rem;
   width: 100%;
   padding: 1.25rem 0.3125rem;
   overflow: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 
 .destination-card {
@@ -1085,12 +1109,13 @@ form button:hover {
   }
 
   .destination-cards {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
     gap: 1.5rem;
     width: 100%;
     padding: 1.25rem 0.3125rem;
-    overflow: visible;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
   }
   .stats {
     margin: 0 2rem;
