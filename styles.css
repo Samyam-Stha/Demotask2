@@ -136,7 +136,7 @@ nav {
   margin-right: -5rem;
 }
 .hero-image img {
-  width: 100%; 
+  width: 100%;
   height: auto;
 }
 
@@ -1029,11 +1029,12 @@ form button:hover {
   }
   .hero-image {
     width: 100%;
-    margin-left: 2rem;
+    margin: 0 auto;
   }
-  .hero-image img {
-    width: 352px;
-    height: 378px;
+   .hero-image img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
   }
   .hero-content .hero-title {
     font-size: 2rem;
