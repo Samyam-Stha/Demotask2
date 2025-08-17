@@ -125,49 +125,54 @@
       <div class="event">
         <div class="events-header">
           <p>Upcoming <span>Events</span></p>
-          <a href="#" class="view-all-btn">View All Events</a>
+          <div class="event-nav-buttons">
+            <button class="event-arrow left">&#10094;</button>
+            <button class="event-arrow right">&#10095;</button>
+          </div>
         </div>
+
         <p class="events-subtitle">
           Turn your international education dreams into reality.
         </p>
       </div>
-
-      <div class="event-cards">
-        <article class="event-card">
-          <img src="/Images/image (1).png" alt="USA Education Fair Poster" />
-          <div class="event-details">
-            <p class="location">Biratnagar</p>
-            <div class="event-info">
-              <h3>USA Education Fair - May &amp; August Intake</h3>
-              <button class="date-btn">28<sup>th</sup> Jan 2025</button>
+      <div class="events-container">
+        <div class="event-cards">
+          <article class="event-card">
+            <img src="/Images/image (1).png" alt="USA Education Fair Poster" />
+            <div class="event-details">
+              <p class="location">Biratnagar</p>
+              <div class="event-info">
+                <h3>USA Education Fair - May &amp; August Intake</h3>
+                <button class="date-btn">28<sup>th</sup> Jan 2025</button>
+              </div>
+              <a href="#" class="register-btn">Register Now</a>
             </div>
-            <a href="#" class="register-btn">Register Now</a>
-          </div>
-        </article>
+          </article>
 
-        <article class="event-card">
-          <img src="/Images/image (2).png" alt="USA Education Fair Poster" />
-          <div class="event-details">
-            <p class="location">Biratnagar</p>
-            <div class="event-info">
-              <h3>USA Education Fair - May &amp; August Intake</h3>
-              <button class="date-btn">28<sup>th</sup> Jan 2025</button>
+          <article class="event-card">
+            <img src="/Images/image (2).png" alt="USA Education Fair Poster" />
+            <div class="event-details">
+              <p class="location">Biratnagar</p>
+              <div class="event-info">
+                <h3>USA Education Fair - May &amp; August Intake</h3>
+                <button class="date-btn">28<sup>th</sup> Jan 2025</button>
+              </div>
+              <a href="#" class="register-btn">Register Now</a>
             </div>
-            <a href="#" class="register-btn">Register Now</a>
-          </div>
-        </article>
+          </article>
 
-        <article class="event-card">
-          <img src="/Images/image (3).png" alt="Study Abroad Fair Poster" />
-          <div class="event-details">
-            <p class="location">Biratnagar</p>
-            <div class="event-info">
-              <h3>USA Education Fair - May &amp; August Intake</h3>
-              <button class="date-btn">28<sup>th</sup> Jan 2025</button>
+          <article class="event-card">
+            <img src="/Images/image (3).png" alt="Study Abroad Fair Poster" />
+            <div class="event-details">
+              <p class="location">Biratnagar</p>
+              <div class="event-info">
+                <h3>USA Education Fair - May &amp; August Intake</h3>
+                <button class="date-btn">28<sup>th</sup> Jan 2025</button>
+              </div>
+              <a href="#" class="register-btn">Register Now</a>
             </div>
-            <a href="#" class="register-btn">Register Now</a>
-          </div>
-        </article>
+          </article>
+        </div>
       </div>
       <button class="mobile-view-all-btn">View All Events</button>
     </section>
@@ -785,18 +790,28 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const container = document.querySelector(".destination-cards");
-        const leftBtn = document.querySelector(".dest-arrow.left");
-        const rightBtn = document.querySelector(".dest-arrow.right");
+        // Destinations Carousel
+        const destContainer = document.querySelector(".destination-cards");
+        const destLeftBtn = document.querySelector(".dest-arrow.left");
+        const destRightBtn = document.querySelector(".dest-arrow.right");
 
-        const scrollAmount = 300; // pixels per click
-
-        leftBtn.addEventListener("click", () => {
-          container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+        destLeftBtn.addEventListener("click", () => {
+          destContainer.scrollBy({ left: -300, behavior: "smooth" });
+        });
+        destRightBtn.addEventListener("click", () => {
+          destContainer.scrollBy({ left: 300, behavior: "smooth" });
         });
 
-        rightBtn.addEventListener("click", () => {
-          container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+        // Events Carousel
+        const eventContainer = document.querySelector(".event-cards");
+        const eventLeftBtn = document.querySelector(".event-arrow.left");
+        const eventRightBtn = document.querySelector(".event-arrow.right");
+
+        eventLeftBtn.addEventListener("click", () => {
+          eventContainer.scrollBy({ left: -300, behavior: "smooth" });
+        });
+        eventRightBtn.addEventListener("click", () => {
+          eventContainer.scrollBy({ left: 300, behavior: "smooth" });
         });
       });
     </script>
