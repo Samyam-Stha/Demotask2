@@ -66,12 +66,7 @@
 
     <nav class="navbar">
       <a href="/" class="logo">
-        <img
-          src="/Images/Primary Logo.png"
-          width="72px"
-          height="72px"
-          alt="360 Logo"
-        />
+        <img src="/Images/Primary Logo.png" alt="360 Logo" />
       </a>
 
       <ul class="nav-links">
@@ -790,7 +785,6 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-     
         const destContainer = document.querySelector(".destination-cards");
         const destLeftBtn = document.querySelector(".dest-arrow.left");
         const destRightBtn = document.querySelector(".dest-arrow.right");
@@ -802,7 +796,6 @@
           destContainer.scrollBy({ left: 300, behavior: "smooth" });
         });
 
-     
         const eventContainer = document.querySelector(".event-cards");
         const eventLeftBtn = document.querySelector(".event-arrow.left");
         const eventRightBtn = document.querySelector(".event-arrow.right");
@@ -812,10 +805,7 @@
         });
         eventRightBtn.addEventListener("click", () => {
           eventContainer.scrollBy({ left: 300, behavior: "smooth" });
-          
         });
-        
-        
       });
     </script>
   </body>
