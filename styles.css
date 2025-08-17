@@ -1197,8 +1197,13 @@ form button:hover {
   }
 
   .review-cards {
-    flex-wrap: nowrap;
+    display: flex;
+    gap: 1.5rem;
+    width: 100%;
+    padding: 1.25rem 0.3125rem;
     overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
   }
   .review-card {
     flex: 0 0 80%;
