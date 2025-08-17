@@ -790,7 +790,7 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        // Destinations Carousel
+     
         const destContainer = document.querySelector(".destination-cards");
         const destLeftBtn = document.querySelector(".dest-arrow.left");
         const destRightBtn = document.querySelector(".dest-arrow.right");
@@ -802,7 +802,7 @@
           destContainer.scrollBy({ left: 300, behavior: "smooth" });
         });
 
-        // Events Carousel
+     
         const eventContainer = document.querySelector(".event-cards");
         const eventLeftBtn = document.querySelector(".event-arrow.left");
         const eventRightBtn = document.querySelector(".event-arrow.right");
@@ -812,7 +812,10 @@
         });
         eventRightBtn.addEventListener("click", () => {
           eventContainer.scrollBy({ left: 300, behavior: "smooth" });
+          
         });
+        
+        
       });
     </script>
   </body>
